@@ -15,7 +15,7 @@ def login():
 
         if username == USER_CREDENTIALS['username'] and password == USER_CREDENTIALS['password']:
             session['user'] = username
-            flash('Login successful', 'success')
+            
             return redirect(url_for('tasks.view_tasks'))   # ✅ go to tasks page
         else:
             flash('Invalid username or password', 'danger')
@@ -28,8 +28,9 @@ def login():
 @auth_bp.route('/logout')
 def logout():
     session.pop('user', None)
-    flash('Logged out', 'info')
+    
     return redirect(url_for('auth.login'))   # ✅ back to login page
+
 
 
 
