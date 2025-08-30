@@ -21,7 +21,7 @@ def add_task():
     new_task = Task(title = title , status = 'Pending')
     db.session.add(new_task)
     db.session.commit()
-    flash('Task added successfully', 'success')
+    
 
   return redirect(url_for('tasks.view_tasks'))  
 
@@ -48,6 +48,7 @@ def clear_tasks():
 
        
           
+
 
 
 
