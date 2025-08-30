@@ -4,6 +4,15 @@
   background: #A1B9BD;
  }
 
+header .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
  .container{
   max-width: 800px;
   margin: auto;
@@ -183,4 +192,5 @@
   background-color: #c82333;
 
  }
+
 
