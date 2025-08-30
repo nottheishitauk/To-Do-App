@@ -42,11 +42,12 @@ def toggle_status(task_id):
 def clear_tasks():
   Task.query.delete()
   db.session.commit()
-  flash('All tasks cleared', 'info')
+  
   return redirect(url_for('tasks.view_tasks'))
 
 
        
           
+
 
 
