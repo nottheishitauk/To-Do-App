@@ -30,11 +30,11 @@ def toggle_status(task_id):
   task =  Task.query.get(task_id)
   if task:
     if task.status == 'Pending':
-      task.status == 'Working'
+      task.status = 'Working'
     elif task.status == 'Working':
-      task.status == 'Done'
+      task.status = 'Done'
     else:
-      task.status == 'Pending'  
+      task.status = 'Pending'  
     db.session.commit()
   return redirect(url_for('tasks.view_tasks'))  
 
@@ -48,4 +48,5 @@ def clear_tasks():
 
        
           
+
 
