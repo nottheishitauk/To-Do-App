@@ -1,7 +1,7 @@
  body{
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #faf0ca;
+  background: #E0E6EF;
  }
 
  .container{
@@ -181,4 +181,5 @@
  }
  .btn-clear :hover{
   background-color: #c82333;
+
  }
