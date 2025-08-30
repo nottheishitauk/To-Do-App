@@ -1,2 +1,3 @@
-web: python run.py
+web: gunicorn --chdir app 'app:create_app()'
+
 
