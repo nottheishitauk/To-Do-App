@@ -4,6 +4,10 @@
   background: #A1B9BD;
  }
 
+
+body.login-page header h1 {
+  text-align: center;
+}
 header .container {
     max-width: 800px;
     margin: auto;
@@ -192,5 +196,6 @@ header .container {
   background-color: #c82333;
 
  }
+
 
 
